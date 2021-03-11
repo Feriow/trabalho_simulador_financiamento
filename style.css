@@ -6,7 +6,8 @@ body {
 
 main {
   zoom: 1.5;
-  width: 700px;
+  width: 60%;
+  min-width: 440px;
   margin: 10px auto;
   padding: 10px;
   background-color: #bcebcbec;
@@ -38,6 +39,7 @@ p,
 input {
   margin-bottom: 0.3em;
   text-align: end;
+  width: 94%;
 }
 
 .areaEntradas {
@@ -49,7 +51,7 @@ input {
 
 .caixa {
   width: 30%;
-  min-width: 130px;
+  /*min-width: 130px;*/
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -65,7 +67,7 @@ input {
 }
 
 .simular {
-  width: 200px;
+  width: 30%;
   display: block;
   margin: 1em auto;
   padding: 3px 0;
