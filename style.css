@@ -1,0 +1,110 @@
+body {
+  color: #110b11;
+  background-image: url(fundo.jpg);
+  background-size: cover;
+}
+
+main {
+  zoom: 1.5;
+  width: 700px;
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #bcebcbec;
+  border: 2px solid #8491a3;
+  border-radius: 5px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+h1 ~ div {
+  border: 1px solid #8491a3;
+  border-radius: 3px;
+}
+
+label,
+h3 {
+  margin-bottom: 0.3em;
+  font-weight: 600;
+}
+
+h3 {
+  display: none;
+  border-bottom: 1.5px solid;
+}
+
+p,
+input {
+  margin-bottom: 0.3em;
+  text-align: end;
+}
+
+.areaEntradas {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  padding: 1em;
+}
+
+.caixa {
+  width: 30%;
+  min-width: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 5px;
+  background-color: #f7fff6;
+  border-radius: 2px;
+}
+
+.caixa:hover,
+.caixa:focus-within {
+  color: #fb5012;
+  border: 2px solid #fb5012;
+}
+
+.simular {
+  width: 200px;
+  display: block;
+  margin: 1em auto;
+  padding: 3px 0;
+  background-color: #87d68d;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 5px 0px;
+  font-weight: bold;
+}
+
+.simular:hover {
+  background-color: #73ec9a;
+}
+
+.simular:active {
+  background-color: #bdecb7;
+}
+
+.resultados {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.areaResultados {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+#prestacao,
+#juros {
+  background-color: #87d68d;
+  display: none;
+  text-align: center;
+}
+
+#amortizacao,
+#totais {
+  background-color: #f7fff6;
+  display: none;
+  text-align: center;
+}

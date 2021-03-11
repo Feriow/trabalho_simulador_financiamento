@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simulação de Financiamento</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>Simulação de Financiamento</h1>
+      <div class="areaEntradas">
+        <div class="caixa">
+          <label for="valor">Valor:</label>
+          <input name="valor" id="valor" type="number" value="200000" />
+        </div>
+
+        <div class="caixa">
+          <label for="prazoAnos">Prazo (anos):</label>
+          <input name="prazo" id="prazoAnos" type="number" value="20" />
+        </div>
+
+        <div class="caixa">
+          <label for="jurosAno">Juros:</label>
+          <input name="juros" id="jurosAno" type="number" value="0.08" />
+        </div>
+      </div>
+      <button type="button" class="simular">Simular</button>
+
+      <h1>Resultados</h1>
+      <div class="resultados">
+        <div class="areaResultados">
+          <div class="caixa">
+            <label for="prazoMes">Prazo (meses):</label>
+            <input name="prazoMes" id="prazoMes" type="number" readonly />
+          </div>
+
+          <div class="caixa">
+            <label for="jurosMes">Juros ao mês:</label>
+            <input name="jurosMes" id="jurosMes" type="number" readonly />
+          </div>
+
+          <div class="caixa">
+            <label for="jurosAcu">Juros acumulados:</label>
+            <input name="jurosAcu" id="jurosAcu" type="number" readonly />
+          </div>
+        </div>
+
+        <div class="areaResultados">
+          <div class="caixa" id="prestacao">
+            <h3>Prestação</h3>
+          </div>
+          <div class="caixa" id="amortizacao">
+            <h3>Amortização</h3>
+          </div>
+          <div class="caixa" id="juros">
+            <h3>Juros</h3>
+          </div>
+          <div class="caixa" id="totais">
+            <h3>Total</h3>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
